@@ -1,0 +1,17 @@
+{
+  "network": "besu",
+  "deployedAt": "2025-06-22T18:53:03.478Z",
+  "contracts": {
+    "ConsentManager": "0x884A9E628B553DcCec4236482c48561dA327d69c",
+    "AssetFactory": "0x6588F6E6E3d836C217d0e6D6dDe2bf059A45b489",
+    "SampleAsset": "0x0abcf0a78026A281104A19a7f85cDaDA35203D26"
+  },
+  "deployer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "sampleAssetInfo": {
+    "name": "Luxury Apartment Building - Cairo",
+    "symbol": "CAIRAPT",
+    "tokenPrice": "1000000000000000000000",
+    "maxSupply": "100000000000000000000",
+    "category": "Real Estate"
+  }
+}

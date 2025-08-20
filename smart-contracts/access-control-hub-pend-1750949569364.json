@@ -1,0 +1,15 @@
+{
+  "contractName": "AccessControlHub",
+  "address": "0x57Bee198a7148A94f27a71465216bB67f166b9F4",
+  "network": "pend",
+  "deployer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "deployedAt": "2025-06-26T14:52:49.361Z",
+  "blockNumber": 2143,
+  "roles": {
+    "ASSET_ISSUER_ROLE": "0x0f4a1624d2cfe63df5cbdc9b68708c627beb25c9251a3d1d6d435900501f6d56",
+    "KYC_CONFIRMER_ROLE": "0xc306eb14cc851371fb03b806f481b27efeb013e0c92fe29ccf2316f866d137cd",
+    "CONSENT_AGENT_ROLE": "0x518ed7cd48c2f8b7a62b79723a8e450f4c708525ea95b2d7bfda10e11682135c",
+    "AUDITOR_ROLE": "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5",
+    "DATA_VIEWER_ROLE": "0xa6bef0a9c9172963f33abd87689a7211b856899bba2160209d377e22dd3d1136"
+  }
+}

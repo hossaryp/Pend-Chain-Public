@@ -1,0 +1,10 @@
+{
+  "network": "besu",
+  "chainId": 7777,
+  "deploymentDate": "2025-06-26T11:59:42.132Z",
+  "contracts": {
+    "ConsentManager": "0x5103f499A89127068c20711974572563c3dCb819",
+    "SmartWalletFactory": "0x0f84B067f6C71861E705aA45233854F5Db33926d"
+  },
+  "deployer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39"
+}

@@ -1,0 +1,32 @@
+{
+  "network": "besu",
+  "contractName": "ConsentManager",
+  "contractAddress": "0x5103f499A89127068c20711974572563c3dCb819",
+  "deployer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "validator": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "consentAgent": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "auditor": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "viewer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "blockNumber": 2902,
+  "timestamp": "2025-06-26T15:56:04.188Z",
+  "supportedVersions": [
+    "FRA-INVESTMENT-1.0",
+    "FRA-KYC-2.0",
+    "FRA-BIOMETRIC-1.0",
+    "FRA-DEVICE-1.0",
+    "FRA-1.0",
+    "FRA-2.0",
+    "TERMS-1.0",
+    "PRIVACY-1.0",
+    "KYC-1.0"
+  ],
+  "features": [
+    "FRA Compliance",
+    "Role-based Access Control",
+    "Consent History Tracking",
+    "Version Management",
+    "Audit Trail",
+    "Device & IP Logging",
+    "Backward Compatibility"
+  ]
+}

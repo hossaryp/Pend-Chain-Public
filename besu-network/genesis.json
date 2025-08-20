@@ -1,0 +1,18 @@
+{
+  "config" : {
+    "chainId" : 1337,
+    "ibft2" : {
+      "blockperiodseconds" : 2,
+      "epochlength" : 30000,
+      "requesttimeoutseconds" : 10
+    }
+  },
+  "nonce" : "0x0",
+  "timestamp" : "0x58ee40ba",
+  "gasLimit" : "0x1fffffffffffff",
+  "difficulty" : "0x1",
+  "mixHash" : "0x63746963616c20616e636520746f6c6572616e6365",
+  "coinbase" : "0x0000000000000000000000000000000000000000",
+  "alloc" : { },
+  "extraData" : "0xf893a00000000000000000000000000000000000000000000000000000000000000000f869943137a8e097779467d7593ac821858a8e116188f794fe61938eaa9059e48c1be3b03a9e9f20b16f138b94c77a1ab19c50ea6040f3033835f1ee3a7cd8693e94ecdbdcaf950e73a9fecde5102054022eb5e049ba94eaf4197108dd5810ec0f6036ee0e6e77621a2e39808400000000c0"
+}

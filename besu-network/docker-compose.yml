@@ -1,0 +1,124 @@
+version: '3'
+
+services:
+  node1:
+    image: hyperledger/besu:25.4.1
+    container_name: besu-node1
+    volumes:
+      - ./node1/data:/var/lib/besu/data
+      - ./config/genesis.json:/var/lib/besu/genesis.json
+      - ./config/static-nodes.json:/var/lib/besu/data/static-nodes.json
+    ports:
+      - "8545:8545"  # RPC
+      - "30301:30301"  # P2P
+    environment:
+      - BESU_NETWORK=dev
+      - BESU_RPC_HTTP_ENABLED=true
+      - BESU_RPC_HTTP_API=ADMIN,ETH,NET,PERM,IBFT
+      - BESU_HOST_ALLOWLIST=*
+      - BESU_RPC_HTTP_CORS_ORIGINS=*
+      - BESU_P2P_PORT=30301
+      - BESU_RPC_HTTP_PORT=8545
+    command: --data-path=/var/lib/besu/data --genesis-file=/var/lib/besu/genesis.json --min-gas-price=0 --api-gas-price-max=0 --tx-pool-min-gas-price=0
+    networks:
+      besu:
+        ipv4_address: 172.25.0.11
+
+  node2:
+    image: hyperledger/besu:25.4.1
+    container_name: besu-node2
+    volumes:
+      - ./node2/data:/var/lib/besu/data
+      - ./config/genesis.json:/var/lib/besu/genesis.json
+      - ./config/static-nodes.json:/var/lib/besu/data/static-nodes.json
+    ports:
+      - "8546:8546"  # RPC
+      - "30302:30302"  # P2P
+    environment:
+      - BESU_NETWORK=dev
+      - BESU_RPC_HTTP_ENABLED=true
+      - BESU_RPC_HTTP_API=ADMIN,ETH,NET,PERM,IBFT
+      - BESU_HOST_ALLOWLIST=*
+      - BESU_RPC_HTTP_CORS_ORIGINS=*
+      - BESU_P2P_PORT=30302
+      - BESU_RPC_HTTP_PORT=8546
+    command: --data-path=/var/lib/besu/data --genesis-file=/var/lib/besu/genesis.json --min-gas-price=0 --api-gas-price-max=0 --tx-pool-min-gas-price=0
+    networks:
+      besu:
+        ipv4_address: 172.25.0.12
+
+  node3:
+    image: hyperledger/besu:25.4.1
+    container_name: besu-node3
+    volumes:
+      - ./node3/data:/var/lib/besu/data
+      - ./config/genesis.json:/var/lib/besu/genesis.json
+      - ./config/static-nodes.json:/var/lib/besu/data/static-nodes.json
+    ports:
+      - "8547:8547"  # RPC
+      - "30303:30303"  # P2P
+    environment:
+      - BESU_NETWORK=dev
+      - BESU_RPC_HTTP_ENABLED=true
+      - BESU_RPC_HTTP_API=ADMIN,ETH,NET,PERM,IBFT
+      - BESU_HOST_ALLOWLIST=*
+      - BESU_RPC_HTTP_CORS_ORIGINS=*
+      - BESU_P2P_PORT=30303
+      - BESU_RPC_HTTP_PORT=8547
+    command: --data-path=/var/lib/besu/data --genesis-file=/var/lib/besu/genesis.json --min-gas-price=0 --api-gas-price-max=0 --tx-pool-min-gas-price=0
+    networks:
+      besu:
+        ipv4_address: 172.25.0.13
+
+  node4:
+    image: hyperledger/besu:25.4.1
+    container_name: besu-node4
+    volumes:
+      - ./node4/data:/var/lib/besu/data
+      - ./config/genesis.json:/var/lib/besu/genesis.json
+      - ./config/static-nodes.json:/var/lib/besu/data/static-nodes.json
+    ports:
+      - "8548:8548"  # RPC
+      - "30304:30304"  # P2P
+    environment:
+      - BESU_NETWORK=dev
+      - BESU_RPC_HTTP_ENABLED=true
+      - BESU_RPC_HTTP_API=ADMIN,ETH,NET,PERM,IBFT
+      - BESU_HOST_ALLOWLIST=*
+      - BESU_RPC_HTTP_CORS_ORIGINS=*
+      - BESU_P2P_PORT=30304
+      - BESU_RPC_HTTP_PORT=8548
+    command: --data-path=/var/lib/besu/data --genesis-file=/var/lib/besu/genesis.json --min-gas-price=0 --api-gas-price-max=0 --tx-pool-min-gas-price=0
+    networks:
+      besu:
+        ipv4_address: 172.25.0.14
+
+  node5:
+    image: hyperledger/besu:25.4.1
+    container_name: besu-node5
+    volumes:
+      - ./node5/data:/var/lib/besu/data
+      - ./config/genesis.json:/var/lib/besu/genesis.json
+      - ./config/static-nodes.json:/var/lib/besu/data/static-nodes.json
+    ports:
+      - "8549:8549"  # RPC
+      - "30305:30305"  # P2P
+    environment:
+      - BESU_NETWORK=dev
+      - BESU_RPC_HTTP_ENABLED=true
+      - BESU_RPC_HTTP_API=ADMIN,ETH,NET,PERM,IBFT
+      - BESU_HOST_ALLOWLIST=*
+      - BESU_RPC_HTTP_CORS_ORIGINS=*
+      - BESU_P2P_PORT=30305
+      - BESU_RPC_HTTP_PORT=8549
+    command: --data-path=/var/lib/besu/data --genesis-file=/var/lib/besu/genesis.json --min-gas-price=0 --api-gas-price-max=0 --tx-pool-min-gas-price=0
+    networks:
+      besu:
+        ipv4_address: 172.25.0.15
+
+networks:
+  besu:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16

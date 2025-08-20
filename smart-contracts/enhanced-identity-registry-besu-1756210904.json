@@ -1,0 +1,58 @@
+{
+  "contractName": "PendIdentityRegistry",
+  "contractVersion": "Enhanced v2.0",
+  "address": "0x074C5a96106b2Dcefb74b174034bd356943b2723",
+  "network": "besu",
+  "chainId": 7777,
+  "deployer": "0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39",
+  "deployedAt": "2025-12-26T15:21:44.000Z",
+  "blockNumber": 2200,
+  "dependencies": {
+    "accessControlHub": "0x57Bee198a7148A94f27a71465216bB67f166b9F4",
+    "consentManager": "0xdcA98EF58D3cD8d15560A20d9ff6A393E6323E87"
+  },
+  "rolesConfigured": {
+    "KYC_CONFIRMER_ROLE": {
+      "hash": "0xc306eb14cc851371fb03b806f481b27efeb013e0c92fe29ccf2316f866d137cd",
+      "holders": ["0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39"]
+    },
+    "AUDITOR_ROLE": {
+      "hash": "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5",
+      "holders": ["0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39"]
+    },
+    "DATA_VIEWER_ROLE": {
+      "hash": "0xa6bef0a9c9172963f33abd87689a7211b856899bba2160209d377e22dd3d1136",
+      "holders": ["0xeaf4197108Dd5810EC0f6036ee0e6E77621a2E39"]
+    }
+  },
+  "hashTypes": {
+    "KYC_HASH_TYPE": "0xb3bc1cc745a34d6b6ed982778605337402498f0e2fee0d09106d501371a02377",
+    "BIOMETRIC_HASH_TYPE": "0x5d05dc8fff2ef0c2903c5f97bfc6c6228e056d7c75f1e401572980385f41777",
+    "DEVICE_HASH_TYPE": "0x2b4387c14cc7dd036809f9ef0ced335c71282192bb5902b52e46772e0471e98",
+    "LOCATION_HASH_TYPE": "0xefe04680ca70112a75abc53a3fd18791d7a7c123e1bce3c9fa32f22352dac294",
+    "GOV_ID_HASH_TYPE": "0x6b9dee94bf8ede571bc584e33f336ba8cb4d3ac4dba902a6f022c54785b83443"
+  },
+  "validRegions": ["EG", "US", "EU", "GLOBAL"],
+  "features": {
+    "kycManagement": true,
+    "extensibleHashStorage": true,
+    "roleBasedAccess": true,
+    "auditFunctions": true,
+    "regionManagement": true,
+    "backwardCompatibility": true
+  },
+  "initialStats": {
+    "totalUsers": 0,
+    "kycedUsers": 0,
+    "verifiedUsers": 0
+  },
+  "upgrades": [
+    {
+      "from": "0xF339f6739B84f003E08B56ecc06B5cD707FCBD0a",
+      "to": "0x074C5a96106b2Dcefb74b174034bd356943b2723",
+      "type": "Enhanced deployment with new features",
+      "migrationRequired": false,
+      "backwardCompatible": true
+    }
+  ]
+} 
