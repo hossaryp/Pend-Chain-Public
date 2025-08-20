@@ -7,10 +7,7 @@ This repository contains comprehensive documentation, smart contracts, and netwo
 ### 📚 Documentation (`/docs/`)
 - **Getting Started**: Setup guides and system overview
 - **Developer Documentation**: Technical architecture and API references  
-- **Features**: Detailed feature specifications and implementations
 - **Smart Contracts**: Contract documentation and deployment guides
-- **Project Management**: Implementation summaries and audit reports
-- **Testing**: Testing frameworks and security reports
 
 ### 📜 Smart Contracts (`/smart-contracts/`)
 - **Core Contracts**: Solidity smart contracts (.sol files)
